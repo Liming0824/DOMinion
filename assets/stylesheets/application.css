@@ -99,13 +99,11 @@ strong{
   top: 55%;
 }
 
-button{
+.button{
   text-transform: uppercase;
   position: fixed;
   right: 18%;
   top: 15%;
-  width: 150px;
-  height:150px;
   background-image: url("../images/button.png");
   background-size: 150px 150px;
   border: none;
@@ -115,17 +113,105 @@ button{
   font-weight: bold;
   outline: none;
 }
-
 .subNode{
   display: flex;
   flex-direction: column;
 }
-
 i{
   text-align: center;
 }
 img[class*="-image"]{
-  /* width: 100px; */
   height: 100px;
   margin: auto;
+}
+
+
+.button{
+  overflow: hidden;
+  width: 115px;
+  height: 108px;
+  border-radius: 50% 50%;
+  background-position: -22px -23px;
+}
+
+.button::before{
+  top: 0px;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, white, transparent);
+  opacity: 0.7;
+  animation: 2s rainbow infinite;
+  animation-fill-mode: forwards;
+}
+
+
+@keyframes rainbow {
+  0% { left: -100%; }
+  30% { left: 100%;}
+  100% {left: 100%;}
+}
+
+.github{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 7%;
+  top: 45%;
+  background-image: url(../images/github.png);
+  background-size: 50px 50px;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  border: none;
+}
+
+.linkedin{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 7%;
+  top: 60%;
+  background-image: url(../images/linkedin.png);
+  background-size: 50px 50px;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  border: none;
+}
+
+.portfolio{
+  width: 50px;
+  height: 50px;
+  position: fixed;
+  right: 7%;
+  top: 75%;
+  background-image: url(../images/portfolio.png);
+  background-size: 50px 50px;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  outline: none;
+  border: none;
+}
+
+
+section{
+  position: fixed;
+  width: 500px;
+  padding: 20px;
+  border: 1px solid rgba(0,0,0,0.2);
+  border-width: 5px;
+  margin-left: 12%;
+  margin-top: 25px;
+  text-align: center;
+  background: rgba(0,0,0,0.1);
+  top: 500px;
+  letter-spacing: 2px;
 }
