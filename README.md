@@ -4,6 +4,8 @@ DOMinion is a JavaScript DOM interaction library inspired by jQuery.
 * Traverse DOM elements
 * Queue functions until DOM is fully loaded
 
+![live](assets/images/live.png)
+
 ## Geting Started
 The way to use DOMinion is to download this library into your project, and use
 the webpack output `dominion.js` as part of your source code.
