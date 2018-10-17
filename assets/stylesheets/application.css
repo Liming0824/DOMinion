@@ -1,0 +1,131 @@
+
+
+.container{
+  display:flex;
+  flex-direction: row;
+}
+
+container{
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+p{
+  width: 120px;
+  height: 100px;
+  background-image: url("../images/tag.png");
+  background-size: 120px 100px;
+  background-repeat: no-repeat;
+  cursor: pointer;
+  color: black;
+  display: block;
+  text-align: center;
+}
+
+p span{
+  line-height: 6;
+}
+
+
+
+.food-pic{
+  margin-top: 58px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 800px;
+  height: 200px;
+}
+
+
+.food-translate{
+  display: flex;
+  flex-direction: row;
+  width: 800px;
+}
+
+p:nth-child(1){
+  margin-left: auto;
+}
+p:nth-last-child(1){
+  margin-right: auto;
+}
+
+.over-page{
+  position: fixed;
+  width: auto;
+  height: 500px;
+  color: lightgrey;
+  opacity: 0.5;
+}
+
+
+
+div[id*="-choice"]{
+  width: 150px;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+body{
+  background-image: url("../images/fruit-background.jpg");
+  background-size: cover;
+}
+
+.my-div h1{
+  padding-left: 15%;
+}
+
+.checked{
+  animation: 1s Animate;
+  animation-fill-mode: forwards;
+}
+
+@keyframes Animate{
+    0%,100%{transform:rotate(0);}
+    10%,30%{transform:rotate(5deg);}
+    20%,40%,60%,80%{transform:rotate(-5deg);}
+    50%,70%{ transform:rotate(3deg);}
+}
+
+strong{
+  position: fixed;
+  font-size: 30px;
+  font-weight: bold;
+  left: 23%;
+  top: 55%;
+}
+
+button{
+  text-transform: uppercase;
+  position: fixed;
+  right: 18%;
+  top: 15%;
+  width: 150px;
+  height:150px;
+  background-image: url("../images/button.png");
+  background-size: 150px 150px;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: white;
+  font-weight: bold;
+  outline: none;
+}
+
+.subNode{
+  display: flex;
+  flex-direction: column;
+}
+
+i{
+  text-align: center;
+}
+img[class*="-image"]{
+  /* width: 100px; */
+  height: 100px;
+  margin: auto;
+}
