@@ -166,7 +166,20 @@ img[class*="-image"]{
   font-weight: bold;
   outline: none;
   border: none;
+  overflow: hidden;
 }
+.github::before{
+  top: 0px;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, white, transparent);
+  opacity: 0.7;
+  animation: 2s rainbow infinite;
+  animation-fill-mode: forwards;
+}
+
 
 .linkedin{
   width: 50px;
@@ -182,7 +195,20 @@ img[class*="-image"]{
   font-weight: bold;
   outline: none;
   border: none;
+  overflow: hidden;
 }
+.linkedin::before{
+  top: 0px;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, white, transparent);
+  opacity: 0.7;
+  animation: 2s rainbow infinite;
+  animation-fill-mode: forwards;
+}
+
 
 .portfolio{
   width: 50px;
@@ -198,7 +224,20 @@ img[class*="-image"]{
   font-weight: bold;
   outline: none;
   border: none;
+  overflow: hidden;
 }
+.portfolio::before{
+  top: 0px;
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to right, transparent, white, transparent);
+  opacity: 0.7;
+  animation: 2s rainbow infinite;
+  animation-fill-mode: forwards;
+}
+
 
 
 section{

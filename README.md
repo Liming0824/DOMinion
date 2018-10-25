@@ -4,7 +4,10 @@ DOMinion is a JavaScript DOM interaction library inspired by jQuery.
 * Traverse DOM elements
 * Queue functions until DOM is fully loaded
 
+[live demo](http://lkang.xyz/DOMinion/)
+
 ![live](assets/images/live.png)
+
 
 ## Geting Started
 The way to use DOMinion is to download this library into your project, and use
@@ -68,9 +71,9 @@ the webpack output `dominion.js` as part of your source code.
   Remove each `DOMNodeCollection` element from the DOM.
 
   `attr`
-  Take either one argument or two arguments. If given one argunment, the method gets the value of the attribute given
-  for the first element of the `DOMNodeCollection` object. If given two argunments, the method sets value(second argunment)
-  to the attribute(first argunment).
+  Take either one argument or two arguments. If given one argument, the method gets the value of the attribute given
+  for the first element of the `DOMNodeCollection` object. If given two arguments, the method sets value(second argument)
+  to the attribute(first argument).
 
   `addClass`
   Adds a class, given as an argument, to each `DOMNodeCollection` element.
@@ -78,18 +81,11 @@ the webpack output `dominion.js` as part of your source code.
   `removeClass`
   Removes a class, given as an argument, from each `DOMNodeCollection` element.
 
-## Event Listeners
-
- `on`
- Adds event listener to each `DOMNodeCollection` element.
-
- `off`
- Removes event listener from each `DOMNodeCollection` element.
 
  ## `$l.ajax`
 
- Accepts a object as an argunment, sends XMLHttpRequest, and return Promise object.
- default argunment is as below:
+ Accepts a object as an argument, sends XMLHttpRequest, and return Promise object.
+ default argument is as below:
 
 ```javascript
    const defaults = {
